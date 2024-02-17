@@ -1,5 +1,14 @@
 # Visual Studio 2015 user specific files
 .vs/
+.vsconfig
+
+# Visual Studio Code
+.vscode
+MireDusk.code-workspace
+
+# Rider
+.idea/
+MireDusk.uproject.DotSettings.user
 
 # Compiled Object files
 *.slo
@@ -26,7 +35,7 @@
 *.lib
 
 # Executables
-*.exe
+# *.exe
 *.out
 *.app
 *.ipa
@@ -69,6 +78,48 @@ Saved/*
 # Compiled source files for the engine to use
 Intermediate/*
 Plugins/*/Intermediate/*
+Makefile
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# UE files
+Config/HoloLens
+.ignore
+
+# Linux setup related
+compile_commands.json
+tags
+.vimspector.json
+.nvimrc
+.cache
+clang-flags.txt
+
+# Developer folders
+Content/Developers
+
+# HoloLens
+Platforms/HoloLens
+Config/HoloLens
+
+# Plugins
+Plugins/AutoSizeComments/ASCCache
+
+# Wwise
+*.cache
+*.akd
+*.prof
+*.validationcache
+*/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+# Whitelist everything Wwise ThirdParty
+!Plugins/Wwise/ThirdParty/**/*.so
+!Plugins/Wwise/ThirdParty/**/*.a
+!Plugins/Wwise/ThirdParty/**/*.lib
+!Plugins/Wwise/ThirdParty/**/*.pdb
+!Plugins/Wwise/ThirdParty/**/*.dll
+!Plugins/Wwise/ThirdParty/**/*.exe
+
+# BlueprintAssist
+Plugins/BlueprintAssist/NodeSizeCache/
+
+dist/
